@@ -857,6 +857,10 @@ select {
   height: 100%;
 }
 
+.h-16 {
+  height: 4rem;
+}
+
 .min-h-screen {
   min-height: 100vh;
 }
@@ -867,6 +871,10 @@ select {
 
 .w-full {
   width: 100%;
+}
+
+.w-auto {
+  width: auto;
 }
 
 .max-w-4xl {
@@ -887,6 +895,10 @@ select {
 
 .justify-center {
   justify-content: center;
+}
+
+.self-center {
+  align-self: center;
 }
 
 .overflow-hidden {
@@ -927,6 +939,11 @@ select {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
+}
+
+.bg-red-800 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -989,6 +1006,11 @@ select {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
+.text-red-800 {
+  --tw-text-opacity: 1;
+  color: rgb(153 27 27 / var(--tw-text-opacity, 1));
+}
+
 .shadow-xl {
   --tw-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);
@@ -1015,6 +1037,11 @@ select {
   background-color: rgb(126 34 206 / var(--tw-bg-opacity, 1));
 }
 
+.hover\:bg-red-700:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(185 28 28 / var(--tw-bg-opacity, 1));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1027,6 +1054,11 @@ select {
 .focus\:border-purple-400:focus {
   --tw-border-opacity: 1;
   border-color: rgb(192 132 252 / var(--tw-border-opacity, 1));
+}
+
+.focus\:border-red-400:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(248 113 113 / var(--tw-border-opacity, 1));
 }
 
 .focus\:outline-none:focus {
@@ -1043,14 +1075,28 @@ select {
   background-color: transparent;
 }
 
+.active\:bg-red-800:active {
+  --tw-bg-opacity: 1;
+  background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
+}
+
 .active\:text-gray-500:active {
   --tw-text-opacity: 1;
   color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 640px) {
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
   .sm\:p-12 {
     padding: 3rem;
+  }
+
+  .sm\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
 }
 
@@ -1115,5 +1161,10 @@ select {
   .dark\:text-purple-400 {
     --tw-text-opacity: 1;
     color: rgb(192 132 252 / var(--tw-text-opacity, 1));
+  }
+
+  .dark\:text-red-400 {
+    --tw-text-opacity: 1;
+    color: rgb(248 113 113 / var(--tw-text-opacity, 1));
   }
 }
